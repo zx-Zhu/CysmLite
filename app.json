@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mainList/mainList",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8EB964",
+    "navigationBarTitleText": "重邮生命",
+    "navigationBarTextStyle": "white"
+  }
+}

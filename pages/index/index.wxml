@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="search">
+    <input class="search_input" placeholder="请输入姓名或学号" bindinput="searchValueInput" />
+  </view>
+  <view class="userinfo">
+    <button class="hello_btn" hover-class="hello-hover" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 你好! </button>
+    <block wx:else>
+      <button class="search_btn" hover-class="btn-hover" bindtap='clickButton'> 搜索 </button>
+    </block>
+  </view>
+</view>

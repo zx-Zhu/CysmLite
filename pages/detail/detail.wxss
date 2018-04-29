@@ -1,0 +1,9 @@
+/* pages/detail/detail.wxss */
+.wx-swiper {
+  height: 1000rpx;
+  width: 100%;
+}
+.pic {
+  height: 100%;
+  width: 100%;
+}

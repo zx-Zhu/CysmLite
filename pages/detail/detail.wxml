@@ -1,0 +1,8 @@
+<swiper class="wx-swiper" indicator-dots="True" autoplay="false" duration="500">
+  <swiper-item>
+    <image class="pic" mode="aspectFill" src="http://pic.betterzzx.com/stuPics/jwzx/{{id}}.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image class="pic" mode="aspectFill" src="http://pic.betterzzx.com/stuPics/cet/{{id}}.jpg" />
+  </swiper-item>
+</swiper>

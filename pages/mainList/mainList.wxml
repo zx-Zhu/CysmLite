@@ -1,0 +1,33 @@
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <text class="weui-loading" />
+    <text class="loading-text">玩命加载中</text>
+  </view>
+</block>
+<block wx:else>
+  <scroll-view style="height: 100%;" scroll-y="true" class="container stu-list" bindscroll="scroll">
+    <block wx:for-items="{{datas}}" wx:for-item="stu">
+      <view class="stu-item" bindtap="viewDetail" data-id="{{stu.studentId}}">
+
+        <view>
+          <text class="stu-name">{{stu.name}}</text>
+          <text class="stu-id">{{stu.studentId}}</text>
+          <text class="stu-sex">{{stu.sex}}</text>
+        </view>
+        <view>
+          <text class="stu-college">{{stu.college}}</text>
+        </view>
+        <view>
+          <text class="stu-major">{{stu.major}}</text>
+          <text class="stu-class">{{stu.classId}}</text>
+        </view>
+      </view>
+    </block>
+    <view>
+      <text class='count_results'>{{message}}</text>
+    </view>
+    <view>
+      <text class='count_serve'>本程序共服务{{count}}次</text>
+    </view>
+  </scroll-view>
+</block>
