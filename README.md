@@ -3,10 +3,11 @@
 
 <div  align="left">    
   <img width="150" height="150" src="http://pic.betterzzx.com/cquptLives.jpg"/>
-  <img width="150" height="150" src="https://github.com/zx-Zhu/CysmLite/blob/master/screenshot/ic_logo.png"/>
+  <img width="130" height="130" src="https://github.com/zx-Zhu/CysmLite/blob/master/screenshot/ic_logo.png"/>
 </div>
+<br />
 
-* 解锁更多的查询姿势：
+### 解锁更多的查询姿势：
 
 比如说你想查的人名叫‘二狗子’，你可以:
 
