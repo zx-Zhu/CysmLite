@@ -4,10 +4,11 @@
   
 * 解锁更多的查询姿势：
 
-比如说你想查的人名叫‘二狗子’，你可以
-<div align=left><img width="180" height="320" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180501-123127.png"/>
-<div align=left><img width="180" height="320" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180501-123154.png"/>
-<div align=left><img width="180" height="320" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180501-123331.png"/>
+比如说你想查的人名叫‘二狗子’，你可以:
+
+<img width="240" height="427" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180501-123127.png"/>
+<img width="240" height="427" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180501-123154.png"/>
+<img width="240" height="427" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180501-123331.png"/>
   
 ## Developed By
 
