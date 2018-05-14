@@ -5,9 +5,9 @@ module.exports = {
     var that = this
     var url
     if (containsNumber(content)) {
-      url = baseUrl + '/cqupt/getStu?id=' + content + '&user=' + app.globalData.userInfo.nickName
+      url = baseUrl + '/cqupt/getStu?id=' + content + '&user=重邮生命：' + app.globalData.userInfo.nickName
     } else {
-      url = baseUrl + '/cqupt/getStu?name=' + content + '&user=' + app.globalData.userInfo.nickName
+      url = baseUrl + '/cqupt/getStu?name=' + content + '&user=重邮生命：' + app.globalData.userInfo.nickName
     }
     wx.request({
       url: url,

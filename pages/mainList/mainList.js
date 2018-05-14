@@ -39,5 +39,30 @@ Page({
     wx.navigateTo({
       url: '../detail/detail?id=' + ds.id
     })
+  },
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '重邮生命Lite',
+      path: '/pages/index/index',
+      imageUrl: '../res/logo.jpg',
+      success: function (res) {
+        wx.showToast({
+          title: '分享成功',
+          icon: 'none',
+          duration: 2000
+        })
+      },
+      fail: function (res) {
+        wx.showToast({
+          title: '分享失败',
+          icon: 'none',
+          duration: 2000
+        })
+      }
+    }
   }
 })
