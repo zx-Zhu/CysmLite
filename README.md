@@ -16,6 +16,10 @@
   <img width="240" height="427" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180501-123154.png"/>
   <img width="240" height="427" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180501-123331.png"/>
 </div>
+<div  align="left"> 
+  <img width="240" height="427" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180528-130541.png"/>
+  <img width="240" height="427" src="https://raw.githubusercontent.com/zx-Zhu/CysmLite/master/screenshot/Screenshot_20180528-130604"/>
+</div>
   
 ## Developed By
 
