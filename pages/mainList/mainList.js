@@ -127,7 +127,7 @@ Page({
    * 对话框确认按钮点击事件
    */
   onConfirm: function () {
-    if (this.data.key == 'zxisthebest') {
+    if (this.data.key == '******') {
       wx.setStorage({
         key: "hasVerified",
         data: "true"
