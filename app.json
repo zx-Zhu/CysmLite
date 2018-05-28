@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/mainList/mainList",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/kebiao/kebiao"
   ],
   "window": {
     "backgroundTextStyle": "light",

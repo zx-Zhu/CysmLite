@@ -35,6 +35,11 @@ Page({
             userInfo: res.userInfo,
             hasUserInfo: true
           })
+        },
+        fail: res => {
+          this.setData({
+            hasUserInfo: false
+          })
         }
       })
     }
@@ -42,10 +47,15 @@ Page({
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+    if (app.globalData.userInfo) {
+      this.setData({
+        userInfo: e.detail.userInfo,
+        hasUserInfo: true
+      })
+    } else {
+      hasUserInfo: false
+    }
+    
   },
   searchValueInput: function (e) {
     this.setData({

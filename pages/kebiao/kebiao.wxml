@@ -1,0 +1,38 @@
+<!--pages/kebiao/kebiao.wxml-->
+<view class='bottom-bar'>
+  <view class="week">第{{count}}周 </view>
+  <view class="dayOfWeek">{{message}}</view>
+  <image class='arrow-left' src='../res/arrow_left.png' bindtap='onLeftTap' />
+  <image class='arrow-right' src='../res/arrow_right.png' bindtap='onRightTap' />
+</view>
+
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <text class="weui-loading" />
+    <text class="loading-text">玩命加载中</text>
+  </view>
+</block>
+<block wx:else>
+  <text wx:if="{{data.length == 0}}" class='extra-noclass'>{{name}} {{extra}}没有课</text>
+  <text wx:else class='extra'>{{name}} {{extra}}的课表</text>
+
+  <scroll-view scroll-y="true" class="stu-list" bindscroll="scroll">
+    <block wx:for-items="{{data}}" wx:for-item="course">
+      <view class='item-course'>
+        <view>
+          <text class="course-lesson" style="flex-item">{{course.lesson}} | </text>
+          <text class="course-course" style="flex-item">{{course.course}}</text>
+        </view>
+        <text class="course-classroom" style="flex-item">{{course.classroom}}</text>
+        <view>
+          <text class="course-type" style="flex-item">{{course.type}} | </text>
+          <text class="course-teacher" style="flex-item">{{course.teacher}} </text>
+          <text wx:if="{{course.period == 3}}" class="course-three" style="flex-item"> | 三节连上</text>
+        </view>
+      </view>
+    </block>
+
+  </scroll-view>
+
+
+</block>

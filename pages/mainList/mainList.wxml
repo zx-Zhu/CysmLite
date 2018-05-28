@@ -5,14 +5,15 @@
   </view>
 </block>
 <block wx:else>
-  <scroll-view style="height: 100%;" scroll-y="true" class="container stu-list" bindscroll="scroll">
-    <block wx:for-items="{{datas}}" wx:for-item="stu">
-      <view class="stu-item" bindtap="viewDetail" data-id="{{stu.studentId}}">
+  <scroll-view class="container stu-list">
+    <block wx:for-items="{{data}}" wx:for-item="stu">
+      <view class="stu-item" catchtap="jumpBtn" data-id="{{stu.studentId}}">
 
         <view>
-          <text class="stu-name">{{stu.name}}</text>
-          <text class="stu-id">{{stu.studentId}}</text>
-          <text class="stu-sex">{{stu.sex}}</text>
+          <text class="stu-name" style="flex-item">{{stu.name}}</text>
+          <text class="stu-id" style="flex-item">{{stu.studentId}}</text>
+          <text class="stu-sex" style="flex-item">{{stu.sex}}</text>
+          <button class="btn-course" style="flex-item" catchtap="jumpCourse" data-id="{{stu.studentId}}" data-name="{{stu.name}}">查看课表</button>
         </view>
         <view>
           <text class="stu-college">{{stu.college}}</text>
@@ -31,3 +32,18 @@
     </view>
   </scroll-view>
 </block>
+
+<view class="modal-mask" catchtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">查看照片</view>
+  <view class="modal-tip">请输入校验码，若没有请与开发者沟通：me@betterzzx.com</view>
+  <view class="modal-content">
+    <view class="modal-input">
+      <input placeholder-class="input-holder" type="text" maxlength="20" bindinput="inputKey" class="input" placeholder="请输入校验码"></input>
+    </view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" catchtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" catchtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
