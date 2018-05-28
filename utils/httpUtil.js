@@ -5,9 +5,7 @@ module.exports = {
     var that = this
     var url
     if (containsNumber(content)) {
-      url = baseUrl + '/cqupt/getStu?id=' + content + '&user=重邮生命：' + app.globalData.userInfo.nickName + '@' + app.globalData.userInfo.city + '@' + app.globalData.userInfo.gender
-    } else {
-      url = baseUrl + '/cqupt/getStu?name=' + content + '&user=重邮生命：' + app.globalData.userInfo.nickName + '@' + app.globalData.userInfo.city + '@' + app.globalData.userInfo.gender
+     } else {
     }
     wx.request({
       url: url,
@@ -29,7 +27,6 @@ module.exports = {
   getCourse: function (stuId, offset, cb) {
     var that = this
     var url
-    url = baseUrl + '/cqupt/getCourse?stuId=' + stuId + '&offset=' + offset
     wx.request({
       url: url,
       header: {
