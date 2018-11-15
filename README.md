@@ -2,7 +2,7 @@
 重庆邮电大学学生信息查询
 
 <div  align="left">    
-  <img width="150" height="150" src="http://pic.betterzzx.com/cquptLives.jpg"/>
+  <img width="150" height="150" src="https://github.com/zx-Zhu/CysmLite/blob/master/screenshot/code.jpg"/>
   <img width="130" height="130" src="https://github.com/zx-Zhu/CysmLite/blob/master/screenshot/ic_logo.png"/>
 </div>
 <br />
