@@ -55,7 +55,6 @@ Page({
     } else {
       hasUserInfo: false
     }
-    
   },
   searchValueInput: function (e) {
     this.setData({
